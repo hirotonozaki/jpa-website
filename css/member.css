@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+.br-sp {
+  display: none;
+}
+
+.member {
+  width: 100%;
+  max-width: 1440px;
+  margin: 150px auto 80px auto;
+}
+
+.top {
+  padding: 0 7%;
+}
+
+.top__title {
+  display: flex;
+  flex-direction: column;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif;
+  font-size: 1.8rem;
+}
+
+.fadeIn {
+  animation-name: fadeInAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInAnime {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.top__title span {
+  font-family: "OptimaNovaLTPro-Light", 'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(35px, 5vw, 71px);
+  letter-spacing: 0.25rem;
+  line-height: 1.1;
+  color: #234D95;
+  padding-bottom: 25px;
+}
+
+.news {
+  max-width: 1100px;
+  margin: 100px auto 0 auto;
+  padding: 0 7%;
+}
+
+h3 {
+  font-size: 2.0rem;
+  color: #234D95;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 D", 'Noto Serif JP', serif;
+}
+
+.news__wrapper {
+  margin-top: 40px;
+  max-width: 1100px;
+  border: #AD9258 solid 1px;
+}
+
+.news__content {
+  padding: 7%;
+  text-align: left;
+}
+
+.news__content ol li:first-child {
+  padding: 0 20px 20px 20px;
+}
+
+.news__content ol li {
+  list-style: none;
+  padding: 20px;
+  border-bottom: #333 solid 1px;
+}
+
+.news__content ol li time {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #234D95;
+}
+
+/* ページネーション */
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.Pagination>*+* {
+  margin-left: 12px;
+}
+
+.Pagination-Item-Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.15s linear;
+}
+
+.Pagination-Item-Link-Icon {
+  width: 20px;
+}
+
+.Pagination-Item-Link.isActive {
+  pointer-events: none;
+  background: #111;
+  color: #fff;
+}
+
+.Pagination-Item-Link:not(.isActive):hover {
+  background: #111;
+  color: #fff;
+}
+
+.Pagination-Item {
+  list-style: none;
+}
+
+/* ＝＝＝＝羽根＝＝＝＝ */
+.rangeitem01 {
+  width: 250px;
+  margin: 10% auto;
+}
+
+.calendar iframe {
+  margin: 0 auto;
+  width: 800px;
+  height: 600px;
+  padding: 0 7%;
+}
+
+.guideline {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 7%;
+
+}
+
+.guideline h3 {
+  margin-bottom: 60px;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 D", 'Noto Serif JP', serif;
+  font-size: 2.0rem;
+  color: #234D95;
+}
+
+.guideline__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-guide {
+  width: 300px;
+  margin: 0 auto 20px auto;
+  padding: 20px 0px;
+  background-color: #fff;
+  border: #AD9258 solid 2px;
+  color: #234D95;
+  border-radius: 500px;
+  align-items: center;
+  justify-content: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 2.0rem;
+}
+a:hover{
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1024px) {
+  .top {
+    padding: 0 7%;
+  }
+
+  .calendar iframe {
+    width: 700px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .Pagination-Item-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 20px;
+    height: 30px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.15s linear;
+  }
+
+  .rangeitem01 {
+    width: clamp(140px, 30vw, 250px);
+    margin: 18% auto;
+  }
+
+  .calendar iframe {
+    width: 500px;
+    height: 550px;
+  }
+
+  .guideline__wrapper {
+    display: inline-grid;
+
+      justify-content: unset;
+    }
+    .btn-guide{
+      width: 220px;
+      margin: 0 0 20px 0;
+    }
+    
+  }
+
+
+
+@media screen and (max-width: 500px) {
+
+  .calendar iframe {
+    width: 350px;
+    height: 500px;
+    padding: unset;
+  }
+}

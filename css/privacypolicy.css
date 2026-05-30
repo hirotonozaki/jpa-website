@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.btn {
+  margin: 40px auto 0 auto;
+  border: 0;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M",'Noto Serif JP', serif;
+  letter-spacing: 0.1rem;
+}
+.privacy {
+  width: 100%;
+  max-width: 1440px;
+  margin: 150px auto 100px auto;
+}
+
+.top-wrapper {
+  padding: 0 5%;
+}
+
+.top-title {
+  display: flex;
+  flex-direction: column;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M",'Noto Serif JP', serif;
+  font-size: 1.7rem;
+}
+
+.top-title span {
+  font-family: "OptimaNovaLTPro-Light",'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(35px, 5vw, 71px);
+  letter-spacing: 0.25rem;
+  line-height: 1.1;
+  color: #234D95;
+  padding-bottom: 25px;
+}
+.top-lead{
+  max-width: 1000px;
+  margin: 100px auto;
+}
+.top-lead p {
+  margin-top: 40px;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M",'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: left;
+}
+.top-lead p span {
+  margin-top: 80px;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 D",'Noto Serif JP', serif;
+  font-size: 1.8rem;
+  color: #333;
+  text-align: left;
+
+}
+@media screen and (max-width: 500px) {
+  .privacy{
+  margin: 120px auto 0 auto;
+}
+}

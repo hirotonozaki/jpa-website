@@ -1,0 +1,642 @@
+@charset "UTF-8";
+
+/* CSS Document */
+html {
+  font-size: 62.5%;
+  /* 16px * 62.5% = 10px */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  color: #333;
+  /* RGB */
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M";
+  font-weight: 500;
+  font-size: 1.6em;
+  line-height: 3.1rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 0 auto;
+  overflow-x: hidden;
+  
+}
+
+
+a {
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+a :hover {
+  opacity: 0.7;
+}
+
+
+/* font 本番*/
+/* font-family: "FOT-筑紫Aオールド明朝 Pr6 R";またはTsukuAOldMinPr6-R default
+font-family: "FOT-筑紫Aオールド明朝 Pr6 M",'Noto Serif JP', serif;　　またはTsukuAOldMinPr6-M
+font-family: "FOT-筑紫Aオールド明朝 Pr6 D",'Noto Serif JP', serif;　　またはTsukuAOldMinPr6-D
+font-family: "OptimaNovaLTPro-Light",'Marcellus', serif;
+font-family: "ZapfinoForteLTPro",'Marcellus', serif;
+font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+font-family: "Palatino",'Noto Serif JP', serif,'Noto Serif JP', serif;
+font-family: "ZapfinoExtraLTPro";
+font-family: 'Noto Serif JP', serif;
+font-family: 'Marcellus', serif;
+*/
+/* ローカル
+font-family:"Optima",'Marcellus', serif;
+font-family: "Palatino",'Noto Serif JP', serif;  */
+
+
+/* color */
+/* color:#234D95;
+color:#AD9258;
+color:#F9F8F4;  背景下地
+color:#F8F8F8;  グレー下地 */
+
+
+/*========= ヘッダー ===============*/
+.header {
+  width: 100%;
+  height: 140px;
+  background-color: #FFFFFF;
+  box-shadow: 0 7px 0 #AD9258;
+  border-radius: 0 0 55px 55px;
+  max-width: 1440px;
+  padding-top: 20px;
+}
+
+.logo {
+  /* width: 415px; */
+  text-align: center;
+  margin: 0 auto;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M",'Noto Serif JP', serif;
+  font-size: 1.6rem;
+}
+
+.logo a {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  text-decoration: none;
+
+
+}
+
+.logo span {
+  font-family: "OptimaNovaLTPro-Regular",'Marcellus', serif;
+  font-weight: 200;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  color: #AD9258;
+  letter-spacing: 0.25rem;
+}
+
+
+.header__top-logo {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+  width: 115px;
+}
+
+.g-nav__top {
+  display: none;
+}
+
+
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  list-style: none;
+  max-width: 880px;
+  margin: 0px auto;
+  padding-top: 15px;
+}
+
+.header ul li a {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  text-decoration: none;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M",'Noto Serif JP', serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  color: #333;
+  line-height: normal;
+}
+
+.header ul li a span {
+ font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+  font-size: 2.0rem;
+  color: #234D95;
+  letter-spacing: 0.1rem;
+}
+
+.li_member {
+ font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+  font-size: 2.0rem;
+  color: #AD9258;
+  letter-spacing: 0.1rem;
+}
+
+
+/*========= フッター 1000で切り替え===============*/
+.footer {
+  width: 100%;
+  height: 155px;
+  box-shadow: 0 -7px 0 #AD9258;
+  background-color: #FFFFFF;
+  border-radius: 55px 55px 0 0;
+  max-width: 1440px;
+  margin: 80px auto 0 auto;
+
+}
+
+.footer__wrapper {
+  display: flex;
+  max-width: 1100px;
+  padding: 0 100px;
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+
+.footer__logo {
+  width: 415px;
+  text-align: center;
+  margin: 0 auto 0 0;
+  padding-top: 25px;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 D",'Noto Serif JP', serif;
+  font-size: 1.6rem;
+}
+
+.footer__logo a {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.footer__logo span {
+  font-family: "OptimaNovaLTPro-Regular",'Marcellus', serif;
+  font-weight: 200;
+  font-size: 2.5rem;
+  color: #AD9258;
+  letter-spacing: 0.25rem;
+}
+
+.footer__nav{
+  display: flex;
+  max-width: 350px;
+}
+.footer ul {
+  display: block;
+  list-style: none;
+  line-height: 2.0;
+  text-align: left;
+  max-width: 880px;
+  margin: 0 0 0 auto;
+  padding-top: 25px;
+}
+
+.wrapper01 {
+  padding-right: 40px;
+}
+
+.footer ul li a {
+  height: 45px;
+ font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+  font-size: 1.8rem;
+  color: #234D95;
+  letter-spacing: 0.1rem;
+  /* margin-bottom: 20px; */
+}
+.footer ul li :hover{
+  opacity: 0.7;
+}
+
+.footer ul li  a p{
+ font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+  color: #AD9258;
+}
+
+
+small {
+ font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.br-pc{
+  display: block;
+}
+.br-sp{
+  display: none;
+}
+@media(max-width:1024px) {
+  .br-pc {
+    display: block;
+  }
+
+  .br-sp {
+    display: none;
+  }
+}
+
+@media(max-width:768px) {
+  .br-pc {
+    display: none;
+  }
+  .br-sp{
+    display: block;
+  }
+}
+
+/*========= メイン ===============*/
+.main {
+  background-color: #FFFFFF;
+  /* margin-bottom: 80px; */
+}
+
+/* @media(min-width:1100px){
+  .main{
+  margin-bottom: 100px;
+  }
+}  */
+
+/*========= ボタン =========*/
+.btn {
+  /*ボタンの形状*/
+  display: flex;
+  color: #fff;
+  height: 50px;
+  width: 190px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto 0 auto;
+
+ font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+  font-size: 2.0rem;
+  border-radius: 100px;
+  letter-spacing: 0.15rem;
+  text-decoration: none;
+  outline: none;
+  /*背景の色と形状*/
+  background: linear-gradient(-270deg, #001650 20%, #030e2b 30%, #094484 60%, #69a3d2 100%);
+  background-position: 50%;
+  background-size: 200% auto;
+  /*アニメーションの指定*/
+  transition: all 0.3s ease-out;
+  box-shadow: rgba(0, 0.1, 0, 0.1) 0px 3px 5px;
+}
+.btn p{
+  margin-top: 3px;
+}
+/*hoverした際の、背景の場所とテキスト色の変更*/
+.btn:hover {
+  color: #fff;
+  background-position: 99% 50%;
+}
+
+.btn:active {
+  transform: translateY(6px);
+  -ms-transform: translateY(6px);
+  -webkit-transform: translateY(6px);
+}
+/* ＝＝＝ページトップ＝＝＝ */
+
+#page-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family:"Optima",'Marcellus', serif;
+  transition: all 0.3s;
+  z-index: 99999;
+  position: fixed;
+	right: 20px;
+	bottom:20px;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+#page-top img{
+  width: 40px;
+  position: relative;
+  top: 10px;
+}
+#page-top a:hover{
+	opacity: 0.7;
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}
+
+
+
+
+
+@media(max-width:1024px) {
+
+  /*1024以下*/
+  .header {
+    width: 100%;
+    height: 80px;
+    border-radius: 0 0 45px 45px;
+    padding-top: 20px;
+  }
+
+  .logo {
+    /* width: 100%; */
+    text-align: left;
+    padding: 0 10%;
+    margin: 0 auto 0 0;
+    /* margin: 0 auto;
+    font-family: "FOT-筑紫Aオールド明朝 Pr6 D";
+    font-size: 1.6rem; */
+  }
+
+  .footer {
+    height: 300px;
+    border-radius: 45px 45px 0 0;
+  }
+
+  .footer__wrapper {
+    display: block;
+    margin: 0 auto;
+    padding: 0 5%;
+    justify-content: unset;
+  }
+.footer__nav{
+  margin: 0 auto;
+  justify-content: center;
+}
+  .footer__logo {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .footer ul {
+    text-align: center;
+
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  .li_wrapper {
+    padding-right: 40px;
+  }
+
+  /*========= ナビゲーション ===============*/
+  #g-nav {
+    margin: 0 auto;
+    /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    /*はじめは透過0*/
+    /*ナビの位置と形状*/
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /*ナビの高さ*/
+    background: rgba(0, 0, 0, 0.9);
+    /*動き*/
+    transition: all 0.3s;
+  }
+
+  .g-nav__top {
+    display: block;
+  }
+
+  /*アクティブクラスがついたら透過なしにして最前面へ*/
+  #g-nav.panelactive {
+    opacity: 1;
+    z-index: 999;
+  }
+
+  /*ナビゲーション*/
+  #g-nav ul {
+    display: none;
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #g-nav.panelactive ul {
+    display: block;
+  }
+
+  #g-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: block;
+    border-bottom: solid #D6C061 1px;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: "FOT-筑紫Aオールド明朝 Pr6 M",'Noto Serif JP', serif;
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+
+  #g-nav ul li a span {
+   font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+    font-size: 2.0rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+  }
+
+  .li_member {
+   font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+    font-size: 2.0rem;
+    color: #D6C061;
+    letter-spacing: 0.1rem;
+  }
+
+  /*========= ハンバーガーボタン===============*/
+  .openbtn {
+    position: fixed;
+    cursor: pointer;
+    top: 4%;
+    right: 17%;
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    z-index: 1000;
+  }
+
+  /*ボタン内側*/
+  .openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    /*アニメーションの設定*/
+    position: absolute;
+    height: 1px;
+    background: #234D95;
+  }
+
+  .openbtn span:nth-of-type(1) {
+    width: 40px
+  }
+
+  .openbtn span:nth-of-type(2) {
+    width: 40px;
+    top: 10px;
+  }
+
+  .openbtn span:nth-of-type(2)::after {
+    content: "Menu";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #234D95;
+    font-size: 1.2rem;
+   font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+    text-transform: uppercase;
+  }
+
+  /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+  .openbtn.active span:nth-of-type(1) {
+    top: 9px;
+    left: -3px;
+    transform: translateY(6px) rotate(-30deg);
+    width: 43px;
+    background: #fff;
+  }
+
+  .openbtn.active span:nth-of-type(2) {
+    top: 20px;
+    left: -2px;
+    transform: translateY(-6px) rotate(30deg);
+    width: 43px;
+    background: #fff;
+  }
+
+  .openbtn.active span:nth-of-type(2)::after {
+    content: "Close";
+    /*2つ目の要素のafterにClose表示を指定*/
+    transform: translateY(0) rotate(-30deg);
+    top: 10px;
+    left: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+   font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+    text-transform: uppercase;
+  }
+}
+
+@media(max-width:768px) {
+  .openbtn {
+    top: 22px;
+  }
+  .header {
+    height: 75px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 5px 0 #AD9258;
+    padding-top: 10px;
+  }
+
+  .logo {
+    line-height: 1.5;
+    margin-top: 3px;
+  }
+
+  .logo span {
+    letter-spacing: 0.15rem;
+  }
+
+  .footer {
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -5px 0 #AD9258;
+  }
+
+  .footer__logo {
+    /* width: 270px; */
+    text-align: center;
+    margin: 0 auto 0 0;
+    padding-top: 15px;
+    /* font-family: "FOT-筑紫Aオールド明朝 Pr6 D";
+    font-size: 1.6rem; */
+  }
+
+  /* .footer__logo a{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    text-decoration: none;
+  
+    
+  } */
+  .footer__logo span {
+    /* font-family: "Optima",'Marcellus', serif;
+    font-weight: 200; */
+    font-size: 1.8rem;
+    padding-top: 20px;
+    /* color: #AD9258; */
+    letter-spacing: 0.15rem;
+  }
+
+  .footer ul li {
+    height: 45px;
+   font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+    font-size: 1.6rem;
+    color: #234D95;
+    letter-spacing: 0.1rem;
+    /* margin-bottom: 20px; */
+  }
+}
+
+@media(max-width:500px) {
+  .logo {
+    padding: 0 7%;
+    margin-top: 5px;
+  }
+}

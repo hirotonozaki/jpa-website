@@ -1,0 +1,470 @@
+@charset "UTF-8";
+
+.btn {
+  margin: 40px auto 0 auto;
+  border: 0;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif;
+  letter-spacing: 0.1rem;
+}
+
+.contact {
+  width: 100%;
+  max-width: 1440px;
+  margin: 150px auto 0 auto;
+}
+
+.top {
+  padding: 0 5%;
+}
+
+.top__title {
+  display: flex;
+  flex-direction: column;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif;
+  font-size: 1.8rem;
+}
+
+.top__title span {
+  font-family: "OptimaNovaLTPro-Light", 'Marcellus', serif;
+  font-weight: 400;
+  font-size: clamp(35px, 5vw, 71px);
+  letter-spacing: 0.25rem;
+  line-height: 1.1;
+  color: #234D95;
+  padding-bottom: 25px;
+}
+
+.top__lead-ja {
+  margin-top: 80px;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 D", 'Noto Serif JP', serif;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.top__lead-eg {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  font-family: "PalatinoLTPro-Light", 'Noto Serif JP', serif;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.contact-box {
+  width: clamp(330px, 70vw, 650px);
+  margin: 0 auto;
+  padding: clamp(30px, 7vw, 70px);
+  justify-content: center;
+  box-sizing: border-box;
+  border: #AD9258 solid 1px;
+}
+
+.inquiry-form {
+  text-align: left;
+  /* max-width: 700px; */
+  margin: 0 auto;
+}
+
+.inquiry-form p {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.inquiry-form input[type="text"],
+.inquiry-form input[type="email"],
+.inquiry-form input[type="tel"],
+.inquiry-form select,
+.inquiry-form textarea {
+  display: block;
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  border: solid 1px #777;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif;
+}
+
+.inquiry-form textarea {
+  height: 300px;
+}
+
+.inquiry-form p label {
+  font-weight: 500;
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.inquiry-form p label span {
+  color: crimson;
+}
+
+.inquiry-form p label.small-label {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.inquiry-form__privacy {
+  margin-top: -3px;
+}
+
+.inquiry-form__privacy-link {
+  color: #333;
+  text-decoration: underline;
+}
+
+
+.inquiry-form p label {
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.inquiry-form p label>.survey-top {
+  margin-bottom: 5px;
+}
+
+.survey-contents {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+#survey01 #survey02 #survey03 #survey04 #survey05 #survey06 {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.survey-contents>.small-label {
+  margin-right: 20px;
+}
+
+.inquiry-form input[type="text"],
+.inquiry-form input[type="email"],
+.inquiry-form input[type="tel"],
+.inquiry-form select,
+.inquiry-form textarea {
+  max-width: 515px;
+  box-sizing: border-box;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif !important;
+}
+
+.inquiry-form textarea {
+  max-width: 515px;
+  max-height: 450px;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif;
+}
+
+.inquiry-form input[type="sumit"] {
+  border: none;
+}
+
+.privacy {
+  display: flex;
+  margin-top: 20px;
+}
+.submit{
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "PalatinoLTPro-Light",'Noto Serif JP', serif;
+  font-size: 1.3rem;
+}
+.submit span{
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M",'Noto Serif JP', serif;
+  font-size: 1.8rem;
+line-height: 1;
+margin-bottom: 3px;
+}
+.privacy>.small-label {
+  padding-left: 10px;
+}
+
+/* ＝＝＝＝＝＝info＝＝＝＝＝ */
+#info-meeting{
+  padding-top: 50px;
+}
+#info-joinus{
+  padding-top: 50px;
+}
+.info {
+  max-width: 720px;
+  margin: 150px auto;
+}
+
+.info-meeting,
+.info-joinus {
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif;
+  font-size: clamp(18px, 3vw, 25px);
+  color: #234D95;
+  margin-bottom: 40px;
+}
+
+.info li {
+  display: flex;
+}
+
+.info01 {
+  box-sizing: border-box;
+  width: 100px;
+  padding-right: 20px;
+  border-right: #AD9258 solid 1px;
+  padding-bottom: 20px;
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif;
+  text-align: left;
+}
+
+.info02 {
+  box-sizing: border-box;
+  width: 620px;
+  padding-left: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.info-joinus {
+  margin-top: 100px;
+}
+
+.info>.btn {
+  font-size: 1.8rem;
+}
+
+/* ＝＝＝＝＝＝QA＝＝＝＝＝ */
+#QA{
+  padding-top: 50px;
+}
+.QA {
+  max-width: 760px;
+  margin: 0 auto;
+
+}
+
+.QA__wrapper {
+  background-color: #F9F8F4;
+  padding: 25px;
+}
+
+.QA h2 {
+  font-family: "FOT-筑紫Aオールド明朝 Pr6 M", 'Noto Serif JP', serif;
+  font-size: clamp(18px, 3vw, 25px);
+  color: #234D95;
+  margin-bottom: 40px;
+}
+
+.QA__title {
+  font-family: "ZapfinoExtraLTPro", 'Marcellus', serif;
+  color: #AD9258;
+  font-size: 5.5rem;
+  letter-spacing: 1.0rem;
+}
+
+.QA__title span {
+  color: #234D95;
+}
+
+.accordion-area {
+  background-color: #fff;
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0 30px;
+}
+
+.accordion-area li {
+  margin: 10px 0;
+  border-bottom: #777 solid 1px;
+}
+
+.accordion-area li:last-child {
+  border-bottom: none;
+}
+
+.title {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 3% 3% 3% 10px;
+  transition: all .5s ease;
+}
+
+.title div {
+  margin-right: 30px;
+}
+
+.title p {
+  font-family: "ZapfinoExtraLTPro", 'Marcellus', serif;
+  font-family: "ZapfinoExtraLTPro", 'Marcellus', serif;
+  color: #AD9258;
+  font-size: clamp(40px, 2vw, 50px);
+  letter-spacing: 1.0rem;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+.box p {
+  font-family: "ZapfinoExtraLTPro" 'Marcellus', serif;
+  font-family: "ZapfinoExtraLTPro", 'Marcellus', serif;
+  color: #234D95;
+  font-size: clamp(40px, 2vw, 50px);
+  letter-spacing: 1.0rem;
+  padding-right: 20px;
+  padding-top: 5px;
+}
+
+/*アイコンの＋と×*/
+.title::before,
+.title::after {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: #234D95;
+
+}
+
+.title::before {
+  top: 44%;
+  right: 15px;
+  transform: rotate(0deg);
+
+}
+
+.title::after {
+  top: 44%;
+  right: 15px;
+  transform: rotate(90deg);
+
+}
+
+.title.close::before {
+  transform: rotate(45deg);
+}
+
+.title.close::after {
+  transform: rotate(-45deg);
+}
+
+.box {
+  display: none;
+  /*はじめは非表示*/
+  margin: 0;
+}
+
+.box__wrapper {
+  display: flex;
+  margin: 0 3% 3% 0%;
+  padding: 3% 3% 3% 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .top__lead-ja br {
+    display: none;
+  }
+
+  .top__lead-ja,
+  .top__lead-eg {
+    text-align: left;
+    padding: 0 7%;
+  }
+
+  .survey-contents {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    padding: unset;
+  }
+
+  .inquiry-form__privacy-link {
+    padding-left: unset;
+  }
+
+  .info {
+    min-width: 315px;
+    margin: 100px auto;
+    padding: 0 5%;
+
+  }
+
+  .info01 {
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    min-width: 57px;
+    padding-right: 10px;
+
+  }
+
+  .info02 {
+    font-size: 1.5rem;
+    min-width: 260px;
+    padding-left: 10px;
+  }
+
+  .QA {
+    padding: unset;
+  }
+
+  .title p {
+
+
+    letter-spacing: 0rem;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+
+  .box {
+    font-size: 1.5rem;
+  }
+
+  .box p {
+    padding-right: 10px;
+  }
+
+  .accordion-area li {
+    margin: unset;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .contact {
+    margin: 120px auto 0 auto;
+  }
+
+  .title {
+    padding: 3% 0px;
+  }
+
+  .title::before {
+    top: 25%;
+    right: 5px;
+    transform: rotate(0deg);
+
+  }
+
+  .title::after {
+    top: 25%;
+    right: 5px;
+    transform: rotate(90deg);
+
+  }
+
+  .accordion-area {
+    padding: 0 15px;
+  }
+
+  .contact-box {
+    padding-bottom: 80px;
+  }
+
+  .box__wrapper {
+    padding: 0 0 10px 0;
+    margin: unset;
+  }
+
+}

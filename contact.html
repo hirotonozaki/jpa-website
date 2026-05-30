@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
+  <title>Japan Penmanship Association</title>
+  <meta name="description" content="日本ぺンマンシップ協会は、幅広い方にペンマンシップに触れていただける活動を行っています。">
+  <meta property="og:url" content="https://japanpenmanship.org">
+  <meta property="og:title" content="Japan Penmanship Association" />
+  <meta property="og:site_name" content="Japan Penmanship Association">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja-JP">
+  <meta property="og:image" content="https://japanpenmanship.org/images/ogp_jpa.jpg">
+  <meta property="og:description" content="日本ぺンマンシップ協会は、幅広い方にペンマンシップに触れていただける活動を行っています。" />
+  <meta name="twitter:card" content="summary" />
+  <link href="images/favicon_jpa.png" rel="icon" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="image/apple-touch-icon_jpa.jpg">
+  <!--fontplus-->
+  <script src="https://webfont.fontplus.jp/accessor/script/fontplus.js?5AFE2XVIalM%3D&box=lZ8meDbXgCQ%3D&aa=1&ab=2"></script>
+  <!--Googlefont-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <!--Animate.cssのCDN-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo"><a href="index.html"><span>Japan Penmanship Association</span>日本ペンマンシップ協会</a></h1>
+    <div id="openbtn" class="openbtn"><span></span><span></span><span></span></div>
+    <nav id="g-nav">
+      <ul>
+        <li class="g-nav__top"><a href="index.html"><span>TOP</span></a></li>
+        <li><a href="about.html"><span>About Us</span>JPAについて</a></li>
+        <li><a href="penmanship.html"><span>Penmanship</span>ペンマンシップについて</a></li>
+        <li><a href="penmanship.html#gallery"><span>Gallery</span>書体・作品</a></li>
+        <li><a href="contact.html"><span>Contact</span>お問い合わせ・見学・入会</a></li>
+        <li><a href="member.html">
+            <div class="li_member">Members Only</div>会員専用
+          </a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contact">
+    <section class="top">
+      <div class="top__title animate__animated animate__fadeInDown animate__delay-1s">
+        <h2><span>Contact</span></h2>
+        お問い合わせ・見学・入会
+      </div>
+      <div class="top__lead-ja">定例会の見学を希望の方は案内をご確認いただき、まずはお問合せフォームからご連絡ください。<br>その他、ご不明な点につきましてもお気軽にお問い合わせください。</div>
+      <div class="top__lead-eg">If anything is unclear, please feel free to contact us.</div>
+    </section>
+
+    
+    <div class="contact-box">
+
+      <form class="inquiry-form" action="contact.html">
+        <p>
+          <label for="form_inquiry_kind">お問い合わせ内容 <span>*</span> Category</label>
+          <select id="form_inquiry_kind">
+            <option value="">選択してください Please Select</option>
+            <option value="">日本ペンマンシップ協会について About JPA</option>
+            <option value="">ペンマンシップについて About Penmanship</option>
+            <option value="">定例会見学希望 Join Our Meeting </option>
+            <option value="">入会希望 Applicants for Membership</option>
+            <option value="">その他 Others</option>
+          </select>
+        </p>
+        <p>
+          <label for="form_name">お名前 <span>*</span> Name</label>
+          <input id="form_name" type="text" placeholder="入力してください">
+        </p>
+
+        <p>
+          <label for="form_email">メールアドレス <span>*</span> E-mail address</label>
+          <input id="form_email" type="email" placeholder="入力してください">
+        </p>
+        <p>
+          <label for="form_phone">電話番号 Phone number</label>
+          <input id="form_phone" type="tel" placeholder="入力してください">
+        </p>
+
+        <p>
+          <label for="form_inquiry_detail">お問い合わせ詳細 <span>*</span> Message</label>
+          <textarea id="form_inquiry_detail" placeholder="入会・見学希望の方はカリグラフィーやペンマンシップのご経験を書きください"></textarea>
+        </p>
+        <p>よろしければ、アンケートのご協力をお願いします。（任意）</p>
+        <p class="survey-top" style="margin-bottom: 0;">・このサイトを知ったのは</p>
+        <div class="survey-contents">
+          <input id="survey01" class="survey" type="radio" name="form_web">
+          <label class="small-label" for="survey01">検索サイト</label>
+          <br>
+          <input id="survey02" class="survey" type="radio" name="form_web">
+          <label class="small-label" for="survey02">協会またはペンマンシップに興味があって</label>
+        </div>
+        <div class="survey-contents">
+          <input id="survey03" class="survey" type="radio" name="form_web">
+          <label class="small-label" for="survey03">知人の紹介</label>
+          <br>
+          <input id="survey04" class="survey" type="radio" name="form_web">
+          <label class="small-label" for="survey04">その他</label>
+        </div>
+
+
+        <p class="survey-top" style="margin-bottom: 0;">・カリグラフィーの経験</p>
+        <div class="survey-contents">
+          <input id="survey05" class="survey" type="radio" name="form_calligraphy">
+          <label class="small-label" for="survey05">ある</label>
+          <br>
+          <input id="survey06" class="survey" type="radio" name="form_calligraphy">
+          <label class="small-label" for="survey06">ない</label>
+        </div>
+
+
+        <p>
+          <span class="privacy">
+            <input class="inquiry-form__privacy" id="form_privacy" type="checkbox">
+            <label class="small-label" for="form_privacy"><a class="inquiry-form__privacy-link"
+                href="privacypolicy.html">プライバシーポリシー
+                Privacy Policy<span>*</span></a>に同意する。</label>
+          </span>
+        </p>
+        <!-- <input class="btn" type="submit" value="送信  Submit"> -->
+        <button class="btn submit" type="submit"><span>送 信</span>Submit</button>
+      </form>
+    </div>
+
+    <section id="info" class="info" >
+      <h2 id="info-meeting" class="info-meeting">定例会見学について</h2>
+      <ul>
+        <li>
+          <p class="info01">定例会</p>
+          <p class="info02">定例会は、東京で行なっています。ご参加可能な方は、入会の前にご参加いただくことをお勧めいたします。<br>
+            定例会は、最大24名で行っています。人数に限りがございますので、見学をお申し込みいただいてもご参加いただけ場合がございますことをご了承ください。</p>
+        </li>
+        <li>
+          <p class="info01">日 時</p>
+          <p class="info02">月1回・日曜日の午後。入退室自由</p>
+        </li>
+        <li>
+          <p class="info01">参加費</p>
+          <p class="info02">初回は無料・入会後は1回1,000円</p>
+        </li>
+        <li>
+          <p class="info01">持ち物</p>
+          <p class="info02">お問い合わせください</p>
+        </li>
+      </ul>
+
+      <h2 id="info-joinus" class="info-joinus">入会について</h2>
+      <ul>
+        <li>
+          <p class="info01">年会費</p>
+          <p class="info02">入会費、その後の年会費は5,000円になります。<br>
+            海外会員は入会金$50になります。『洋書道』を郵送でお送りします。</p>
+
+        </li>
+        <li>
+          <p class="info01">定例会</p>
+          <p class="info02">例会は東京で毎月1回開催。総会及び懇親会は毎年8月に東京で開催します。<br>
+            定例会は1回1,000円の参加費をいただいております。<br>
+            個人教室などでのレッスンは設けていません。<br>
+            定例会の見学も行っていますので、まずはご連絡ください。</p>
+
+        </li>
+        <li>
+          <p class="info01">季刊誌</p>
+          <p class="info02">会報『洋書道』は年4回の発行を予定しています。</p>
+
+        </li>
+        <li>
+          <p class="info01">入 会</p>
+          <p class="info02">入会をご希望の方は、入会規約をご確認の上、お問い合わせフォームからお申し込みください。また、ご参加可能な方には事前に定例会の見学をお勧めしてます。</p>
+        </li>
+      </ul>
+
+      <a class="btn" href="https://japanpenmanship.org/images/jpa-terms.pdf" target="_blank">入会規約PDF</a>
+    </section>
+
+    <section id="QA" class="QA">
+      <p class="QA__title">Q<span>&</span>A</p>
+      <h2>よくある質問</h2>
+      <div class="QA__wrapper">
+        <ul class="accordion-area">
+          <li>
+            <div class="title">
+              <p>Q</p>
+              <div>興味があり入会したいのですが、まったくの初心者で道具をもっていません。どうすればよいですか。</div>
+            </div>
+            <div class="box">
+              <div class="box__wrapper">
+                <p>A</p>
+                <div>例会の見学にいらしていただければ、道具等のアドバイスをいたします。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              <p>Q</p>
+              <div>ペンマンシップとカリグラフィー、レタリングの違いは何ですか。</div>
+            </div>
+            <div class="box">
+              <div class="box__wrapper">
+                <p>A</p>
+                <div>
+                  文字を絵的なものとして描くレタリングに比べ、ペンや筆を使い、基本一筆で文字自体を書いていくもの、美しい手書き文字がペンマンシップ、カリグラフィーです。ヨーロッパで古代より宗教芸術にも関連して発展したカリグラフィーに対し、ペンマンシップは19世紀のアメリカでビジネスの実用書体として生まれました。従来のカリグラフィーにあったラインのテクニックを踏まえ、独自の書体、華やかな装飾を特徴としています。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              <p>Q</p>
+              <div>入会した場合、例会は毎回参加しなくてはいけないのでしょうか。</div>
+            </div>
+            <div class="box">
+              <div class="box__wrapper">
+                <p>A</p>
+                <div>毎回参加いただけるとうれしいのですが、参加は自由です。遅れての参加や早退もできます。地方会員の方など参加が難しい会員の方も多くいらっしゃいます。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              <p>Q</p>
+              <div>例会を見学したいので、日時や場所を教えてください。準備するものはありますか。</div>
+            </div>
+            <div class="box">
+              <div class="box__wrapper">
+                <p>A</p>
+                <div>東京で日曜日午後に開催しています。第何週に開催かは月ごとに変わりますので、詳細についてはお問合せください。また会場には定員がありますので、当月に見学していただけない場合もあります。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              <p>Q</p>
+              <div>協会で体験レッスンやオンラインレッスンは開催していますか。</div>
+            </div>
+            <div class="box">
+              <div class="box__wrapper">
+                <p>A</p>
+                <div>申し訳ございません。今のところは開催しておりません。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              <p>Q</p>
+              <div>例会に参加すると、関連書籍や資料の閲覧や購入はできますか。</div>
+            </div>
+            <div class="box">
+              <div class="box__wrapper">
+                <p>A</p>
+                <div>毎回ということではなく、参加した会員が持参することもあるという形です。絶版になっている書籍もあり、購入は難しいものがほとんどです。
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              <p>Q</p>
+              <div>オーナメンタル体やフラーリッシングを書きたいです。どのくらいで書けるようになりますか。
+              </div>
+            </div>
+            <div class="box">
+              <div class="box__wrapper">
+                <p>A</p>
+                <div>美しく伸びやかなラインを書くための基本の運筆をマスターする必要がありますので、すぐに美しく形になることはありません。書道としての腕、指の使い方も楽しんでいただければと思います。
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <div id="page-top">
+      <a href="#"><img src="images/page-top.svg" alt="ページトップ">TOP</a>
+    </div>
+    <section class="footer">
+      <div class="footer__wrapper">
+        <h2 class="footer__logo"><a href="index.html"><span>Japan Penmanship Association</span>日本ペンマンシップ協会</a></h2>
+        <div class="footer__nav">
+
+          <div class="wrapper01">
+            <ul>
+              <li><a href="about.html">About Us </a></li>
+              <li><a href="penmanship.html">Penmanship</a></li>
+              <li><a href="penmanship.html#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="member.html"><p>Members Only</p></a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <small>Japan Penmanship Association All rights reserved.</small>
+    </section>
+  </footer>
+
+  <!--JS-->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="slick/slick.js"></script>
+<script src="js/common.js"></script>
+</body>
+
+</html>
